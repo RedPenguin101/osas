@@ -11,6 +11,10 @@ The core accounting model of OSAS is extremely simple. An entry consists of an a
 ## stories
 * I want to be able to see a list of all entries
 * I want to be able to create a transaction
+* I want to check whether the entries on a transcation balance
 
 ## coding notes
-* transaction interface, with implementations
+
+
+## Todo
+* get methods out of domain and put them in Use Cases
