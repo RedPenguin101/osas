@@ -17,4 +17,8 @@ The core accounting model of OSAS is extremely simple. An entry consists of an a
 
 
 ## Todo
-* get methods out of domain and put them in Use Cases
+* DONE get methods out of domain and put them in Use Cases
+* change create transaction use case so
+	* you can add entries to it
+	* executing it commits the repo
+	* executing it checks the balance
