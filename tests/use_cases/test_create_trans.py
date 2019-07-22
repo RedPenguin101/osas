@@ -5,15 +5,17 @@ from osas.use_cases import create_trans_use_case as uc
 
 
 def test_create_trans_use_case():
-    repo = mock.Mock()
-    create_trans = uc.CreateTransactionUseCase(repo)
+    create_trans = uc.CreateTransactionUseCase()
 
-    assert create_trans.repo == repo
 
 def test_uc_excutes():
-    repo = mock.Mock()
-    create_trans = uc.CreateTransactionUseCase(repo)
+    create_trans = uc.CreateTransactionUseCase()
 
     return_val = create_trans.execute()
 
     assert type(return_val).__name__ == "Transaction"
+
+
+def test_add_entry_to_transaction():
+    create_trans = uc.CreateTransactionUseCase()
+    create_trans.add_entry()
